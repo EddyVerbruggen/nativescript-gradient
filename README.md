@@ -65,5 +65,5 @@ Nope, it's as light as a feather!
 ### What kind of element is the `Gradient` tag?
 It's a `StackLayout`, so you can use all the regular `StackLayout` properties (like `orientation="horizontal"`) - and you can use the `Gradient` tag in any spot where you would otherwise use a `StackLayout`.
 
-### How many color can we pass to the plugin?
+### How many `colors` can we pass to the plugin?
 Knock yourself out, but the minimum is two.
