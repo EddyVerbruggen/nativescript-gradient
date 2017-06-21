@@ -1,0 +1,23 @@
+<ActionBar title="Gradients-NG FTW!" class="action-bar">
+</ActionBar>
+
+<TabView>
+
+  <!-- Tab1  -->
+  <Gradient direction="to right" colors="#FF0077, red, #FF00FF" *tabItem="{title: 'Full gradient'}">
+    <Label class="p-20 c-white" horizontalAlignment="center" text="My gradients are the best." textWrap="true"></Label>
+    <Label class="p-10 c-white" horizontalAlignment="center" text="It's true." textWrap="true"></Label>
+  </Gradient>
+
+  <!-- Tab2  -->
+  <StackLayout *tabItem="{title: 'Partial gradient'}">
+    <StackLayout class="page">
+      <Label class="c-grey-dark p-10" text="No gradient for me"></Label>
+      <Gradient direction="to right" colors="#FF0077, red, #FF00FF" orientation="horizontal" class="p-10">
+        <Label class="c-white" text="Look mom, I have a gradient"></Label>
+      </Gradient>
+      <Label class="c-grey-dark p-10" text="No gradient for me either"></Label>
+    </StackLayout>
+  </StackLayout>
+
+</TabView>

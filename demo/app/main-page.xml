@@ -1,0 +1,34 @@
+<Page
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:Gradient="nativescript-gradient" loaded="pageLoaded">
+
+  <ActionBar title="Gradients FTW!"/>
+
+  <TabView id="tabViewContainer" selectedColor="#fff" tabsBackgroundColor="#336699">
+    <TabView.items>
+
+      <TabViewItem title="Full gradient" class="tab-item">
+        <TabViewItem.view>
+          <ScrollView>
+            <Gradient:Gradient direction="to right" colors="#FF0077, red, #FF00FF" id="wrapper">
+              <Label text="Such a fancy gradient :)" horizontalAlignment="center"/>
+            </Gradient:Gradient>
+          </ScrollView>
+        </TabViewItem.view>
+      </TabViewItem>
+
+      <TabViewItem title="Partial gradients" class="tab-item">
+        <TabViewItem.view>
+          <StackLayout>
+            <Label class="p-10" text="No gradient for me"/>
+            <Gradient:Gradient direction="to right" colors="#FF0077, red, #FF00FF">
+              <Label class="p-10" text="Look mom, I have a gradient"/>
+            </Gradient:Gradient>
+            <Label class="p-10" text="No gradient for me either"/>
+          </StackLayout>
+        </TabViewItem.view>
+      </TabViewItem>
+
+    </TabView.items>
+  </TabView>
+</Page>

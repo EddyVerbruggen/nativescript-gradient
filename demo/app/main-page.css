@@ -1,0 +1,28 @@
+#tabViewContainer{
+    background-color: #363b58;
+    color: #fff;
+}
+
+ListView{
+    background-color: transparent;
+    color: #FFF;
+}
+
+.list-check{
+    font-weight: bold;
+    font-size: 14;
+    margin: 2%, 0, 2%, 2%;
+}
+
+.list-item{
+    padding: 10 10;
+}
+
+
+.fontBig {
+    font-size: 40;
+}
+
+.p-10 {
+    padding: 10;
+}
