@@ -13,7 +13,7 @@
 [twitter-image]:https://img.shields.io/twitter/follow/eddyverbruggen.svg?style=social&label=Follow%20me
 [twitter-url]:https://twitter.com/eddyverbruggen
 
-<img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/ios-full.png" height="400px" /> <img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/ios-partial.png" height="400px" /> <img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/android-full.png" height="400px" /> <img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/android-partial.png" height="400px" />
+<img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/ios-full.png" height="360px" />  <img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/android-full.png" height="360px" />  <img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/ios-partial.png" height="360px" />  <img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/android-partial.png" height="360px" />
 
 _Those are screenshots of the [Angular demo app](https://github.com/EddyVerbruggen/nativescript-gradient/tree/master/demo-ng). We also have an [XML demo app](https://github.com/EddyVerbruggen/nativescript-gradient/tree/master/demo)._
 
