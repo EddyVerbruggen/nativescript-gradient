@@ -1,5 +1,5 @@
- import { Color } from "tns-core-modules/color";
-import {Gradient as GradientBase, GradientDirection } from "./gradient-common";
+import { Color } from "tns-core-modules/color";
+import { Gradient as GradientBase, GradientDirection } from "./gradient-common";
 
 export class Gradient extends GradientBase {
   private _gradientLayer: CAGradientLayer;
