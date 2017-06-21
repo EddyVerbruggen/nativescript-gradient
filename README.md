@@ -1,4 +1,4 @@
-# NativeScript Gradient
+# NativeScript Gradient 🎨
 
 [![Build Status][build-status]][build-url]
 [![NPM version][npm-image]][npm-url]
@@ -13,10 +13,7 @@
 [twitter-image]:https://img.shields.io/twitter/follow/eddyverbruggen.svg?style=social&label=Follow%20me
 [twitter-url]:https://twitter.com/eddyverbruggen
 
-<img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/ios-full.png" height="500px" />
-<img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/ios-partial.png" height="500px" />
-<img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/android-full.png" height="500px" />
-<img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/android-partial.png" height="500px" />
+<img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/ios-full.png" height="400px" /> <img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/ios-partial.png" height="400px" /> <img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/android-full.png" height="400px" /> <img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/android-partial.png" height="400px" />
 
 _Those are screenshots of the [Angular demo app](https://github.com/EddyVerbruggen/nativescript-gradient/tree/master/demo-ng). We also have an [XML demo app](https://github.com/EddyVerbruggen/nativescript-gradient/tree/master/demo)._
 
@@ -26,8 +23,7 @@ tns plugin add nativescript-gradient
 ```
 
 ## Usage
-Add a `<Gradient>` tag to your view in any place where you'd otherwise use a `StackLayout`
-(we've subclassed `StackLayout`, that's why).
+Since we're subclassing `StackLayout`, you can add `<Gradient>` to your view at any place where you'd otherwise use a `StackLayout`.
 
 In addition to any properties you can already set on a `StackLayout` you should add:
 
@@ -35,7 +31,7 @@ In addition to any properties you can already set on a `StackLayout` you should 
 * `direction`: One of "to bottom", "to top", "to right", "to left", "to bottom left", "to top left", "to bottom right", "to top right".
 
 ### Angular
-Add this to `app.module.ts` so you can use `Gradient` as a tag in the view:
+Add this to `app.module.ts` so you can use a `Gradient` tag in the view:
 
 ```typescript
 import { registerElement } from "nativescript-angular";
@@ -51,7 +47,6 @@ These colors are also used in the screenshots above.
 ```
 
 ### Plain XML
-These colors are also used in the screenshots above.
 ```xml
 <Page
     xmlns="http://schemas.nativescript.org/tns.xsd"
@@ -63,11 +58,11 @@ These colors are also used in the screenshots above.
 ```
 
 ## Q & A
-#### Does this plugin use third party libraries as a dependency?
-Nope.
+### Does this plugin use any third party libraries?
+Nope, it's a light as a feather!
 
-#### What kind of element is the `Gradient` tag?
+### What kind of element is the `Gradient` tag?
 It's a `StackLayout`, so you can use all normal `StackLayout` properties (like `orientation="horizontal"`) on this element as well, and you can use the `Gradient` tag in any spot where you would otherwise use a `StackLayout`.
 
-#### How many color can we pass to the plugin?
+### How many color can we pass to the plugin?
 Knock yourself out, but the minimum is two.
