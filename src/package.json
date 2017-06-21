@@ -26,7 +26,7 @@
     "preparedemong": "npm run build && cd ../demo-ng && tns plugin remove nativescript-gradient; tns plugin add ../src && tns install",
     "prepublish": "npm run build",
     "setup": "npm i && cd ../demo && npm i && cd ../demo-ng && npm i && cd ../src",
-    "test": "npm run tslint && npm run tslint.demo && cd ../demo && tns build android",
+    "test": "npm run tslint && npm run tslint.demo && npm run tslint.demo.ng",
     "tslint": "tslint *.ts",
     "tslint.demo": "tslint ../demo/app/*.ts",
     "tslint.demo.ng": "tslint ../demo-ng/app/*.ts"
