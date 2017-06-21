@@ -60,10 +60,10 @@ Import the `Gradient` namespace in the `Page` tag and enjoy the colors!
 
 ## Q & A
 ### Does this plugin use any third party libraries?
-Nope, it's a light as a feather!
+Nope, it's as light as a feather!
 
 ### What kind of element is the `Gradient` tag?
-It's a `StackLayout`, so you can use all normal `StackLayout` properties (like `orientation="horizontal"`) on this element as well, and you can use the `Gradient` tag in any spot where you would otherwise use a `StackLayout`.
+It's a `StackLayout`, so you can use all the regular `StackLayout` properties (like `orientation="horizontal"`) - and you can use the `Gradient` tag in any spot where you would otherwise use a `StackLayout`.
 
 ### How many color can we pass to the plugin?
 Knock yourself out, but the minimum is two.
