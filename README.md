@@ -47,6 +47,7 @@ These colors are also used in the screenshots above.
 ```
 
 ### Plain XML
+Import the `Gradient` namespace in the `Page` tag and enjoy the colors!
 ```xml
 <Page
     xmlns="http://schemas.nativescript.org/tns.xsd"
