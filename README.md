@@ -27,7 +27,7 @@ Since we're subclassing `StackLayout`, you can add `<Gradient>` to your view at 
 
 In addition to any properties you can already set on a `StackLayout` you should add:
 
-* `colors`: Pass a minimum number of two. Just use the `value` that you would otherwise pass to NativeScript's `new Color("value")`.
+* `colors`: Pass a minimum number of two. Just use the `value` that you would otherwise pass to NativeScript's [`new Color("value")`](https://docs.nativescript.org/api-reference/classes/_color_.color.html). So `red`, `#FF0000`, `rgb(255, 0, 0)`, and even `rgba(255, 0, 0, 0.5)` ([transparency!](https://github.com/EddyVerbruggen/nativescript-gradient/issues/2)) will all work.
 * `direction`: One of "to bottom", "to top", "to right", "to left", "to bottom left", "to top left", "to bottom right", "to top right".
 
 ### Angular
