@@ -1,5 +1,6 @@
 import { Color } from "tns-core-modules/color";
 import { Gradient as GradientBase, GradientDirection } from "./gradient-common";
+import { layout } from "tns-core-modules/utils/utils";
 
 const LINEAR_GRADIENT = 0;
 
@@ -14,10 +15,10 @@ export class Gradient extends GradientBase {
     return this._android;
   }
 
-  protected updateRadius(radius: number) {
-      if (radius) {
-        this._backgroundDrawable.setCornerRadius(radius);
-      }
+  protected updateBorderRadius(radius: number) {
+    if (radius) {
+      this._backgroundDrawable.setCornerRadius(radius * layout.getDisplayDensity());
+    }
   }
 
   protected updateColors(colors?: Color[]): void {

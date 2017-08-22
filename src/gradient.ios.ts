@@ -18,7 +18,7 @@ export class Gradient extends GradientBase {
   }
 
 
-  protected updateRadius(radius: number) {
+  protected updateBorderRadius(radius: number) {
     if (radius) {
       this._gradientLayer.cornerRadius = radius;
     }

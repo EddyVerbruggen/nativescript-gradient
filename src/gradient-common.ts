@@ -7,8 +7,8 @@ const directionProperty = new Property<Gradient, string>({
   defaultValue: "to bottom"
 });
 
-const radiusProperty = new Property<Gradient, number>({
-  name: "radius",
+const borderRadiusProperty = new Property<Gradient, number>({
+  name: "borderRadius",
   defaultValue: 0
 });
 
@@ -27,9 +27,9 @@ export abstract class Gradient extends StackLayout {
     }
   }
 
-  [radiusProperty.setNative](value: number) {
+  [borderRadiusProperty.setNative](value: number) {
     if (value) {
-      this.updateRadius(value);
+      this.updateBorderRadius(value);
     }
   }
 
@@ -61,13 +61,13 @@ export abstract class Gradient extends StackLayout {
 
   protected abstract updateColors(colors: Color[]);
 
-  protected abstract updateRadius(radius: number);
+  protected abstract updateBorderRadius(radius: number);
 
   protected abstract updateDirection(direction: string);
 }
 
 directionProperty.register(Gradient);
-radiusProperty.register(Gradient);
+borderRadiusProperty.register(Gradient);
 colorsProperty.register(Gradient);
 
 export namespace GradientDirection {
