@@ -17,6 +17,13 @@ export class Gradient extends GradientBase {
     this._gradientLayer.frame = this.ios.layer.bounds;
   }
 
+
+  protected updateRadius(radius: number) {
+    if (radius) {
+      this._gradientLayer.cornerRadius = radius;
+    }
+  }
+
   protected updateColors(colors?: Color[]): void {
     if (colors && colors.length >= 2 && this.ios && this._gradientLayer) {
       const colorsArray = NSMutableArray.alloc().initWithCapacity(colors.length);

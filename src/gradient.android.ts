@@ -14,6 +14,12 @@ export class Gradient extends GradientBase {
     return this._android;
   }
 
+  protected updateRadius(radius: number) {
+      if (radius) {
+        this._backgroundDrawable.setCornerRadius(radius);
+      }
+  }
+
   protected updateColors(colors?: Color[]): void {
     if (colors && colors.length >= 2 && this._android) {
       const _androidColors = [];

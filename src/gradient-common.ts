@@ -7,6 +7,11 @@ const directionProperty = new Property<Gradient, string>({
   defaultValue: "to bottom"
 });
 
+const radiusProperty = new Property<Gradient, string>({
+  name: "radius",
+  defaultValue: 0
+});
+
 const colorsProperty = new Property<Gradient, string>({
   name: "colors"
 });
@@ -19,6 +24,12 @@ export abstract class Gradient extends StackLayout {
       if (Gradient.isValidDirection(sanitizedValue)) {
         this.updateDirection(sanitizedValue);
       }
+    }
+  }
+
+  [radiusProperty.setNative](value: number) {
+    if (value) {
+      this.updateRadius(value);
     }
   }
 
@@ -50,10 +61,13 @@ export abstract class Gradient extends StackLayout {
 
   protected abstract updateColors(colors: Color[]);
 
+  protected abstract updateRadius(radius: number);
+
   protected abstract updateDirection(direction: string);
 }
 
 directionProperty.register(Gradient);
+radiusProperty.register(Gradient);
 colorsProperty.register(Gradient);
 
 export namespace GradientDirection {
