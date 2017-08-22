@@ -15,7 +15,7 @@
 
 <img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/ios-full.png?v=2" height="364px" />  <img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/android-full.png?v=2" height="364px" />  <img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/ios-partial.png?v=2" height="364px" />  <img src="https://github.com/EddyVerbruggen/nativescript-gradient/raw/master/screenshots/android-partial.png?v=2" height="364px" />
 
-_Those are screenshots of the [Angular demo app](https://github.com/EddyVerbruggen/nativescript-gradient/tree/master/demo-ng). We also have an [XML demo app](https://github.com/EddyVerbruggen/nativescript-gradient/tree/master/demo)._
+_Those are screenshots of the [Angular](https://github.com/EddyVerbruggen/nativescript-gradient/tree/master/demo-ng) and [plain XML](https://github.com/EddyVerbruggen/nativescript-gradient/tree/master/demo) demo apps._
 
 ## Installation
 ```bash
