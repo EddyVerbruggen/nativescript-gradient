@@ -7,7 +7,7 @@ const directionProperty = new Property<Gradient, string>({
   defaultValue: "to bottom"
 });
 
-const radiusProperty = new Property<Gradient, string>({
+const radiusProperty = new Property<Gradient, number>({
   name: "radius",
   defaultValue: 0
 });
