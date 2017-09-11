@@ -7,6 +7,28 @@
   <TabView id="tabViewContainer" selectedColor="#ffffff" tabsBackgroundColor="#fa963e">
     <TabView.items>
 
+      <TabViewItem title="Partial gradients" class="tab-item">
+        <TabViewItem.view>
+          <Gradient:Gradient class="p-10" direction="to bottom" colors="#565e8c, #282e48">
+            <Gradient:Gradient direction="to right" colors="#FF0077, red, #FF00FF" borderRadius="5">
+              <Label class="p-10" text="Look mom, I have a gradient"/>
+            </Gradient:Gradient>
+
+            <GridLayout rows="*" width="300" height="200" style="margin-top: 20">
+              <Image src="~/images/trees.jpg" width="100%" height="100%"/>
+              <Label class="p-10" text="Original image" verticalAlignment="bottom"/>
+            </GridLayout>
+
+            <GridLayout rows="*" width="300" height="200" style="margin-top: 20">
+              <Image src="~/images/trees.jpg" width="100%" height="100%"/>
+              <Gradient:Gradient width="100%" height="100%" horizontalAlignment="center" direction="to bottom" colors="rgba(0,0,0,255), rgba(0,0,0,255), rgba(0,0,0,1)"/>
+              <Label class="p-10" text="Image with gradient" verticalAlignment="bottom"/>
+            </GridLayout>
+
+          </Gradient:Gradient>
+        </TabViewItem.view>
+      </TabViewItem>
+
       <TabViewItem title="Full gradient" class="tab-item">
         <TabViewItem.view>
           <ScrollView>
@@ -21,18 +43,6 @@
               </Gradient:Gradient>
             </android>
           </ScrollView>
-        </TabViewItem.view>
-      </TabViewItem>
-
-      <TabViewItem title="Partial gradients" class="tab-item">
-        <TabViewItem.view>
-          <Gradient:Gradient class="p-10" direction="to bottom" colors="#565e8c, #282e48">
-            <Label class="p-10" text="No gradient for me"/>
-            <Gradient:Gradient direction="to right" colors="#FF0077, red, #FF00FF" borderRadius="5">
-              <Label class="p-10" text="Look mom, I have a gradient"/>
-            </Gradient:Gradient>
-            <Label class="p-10" text="No gradient for me either"/>
-          </Gradient:Gradient>
         </TabViewItem.view>
       </TabViewItem>
 
