@@ -1,5 +1,7 @@
 # NativeScript Gradient 🎨
 
+> PSA: With NativeScript 4.1 this plugin is no longer needed, because linear gradient support is now built-in. Here, have a Tweet about it: https://twitter.com/tjvantoll/status/1004735792474935296. I'm using those in [my plugins demo app](https://github.com/EddyVerbruggen/nativescript-pluginshowcase).
+
 [![Build Status][build-status]][build-url]
 [![NPM version][npm-image]][npm-url]
 [![Downloads][downloads-image]][npm-url]
